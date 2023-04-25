@@ -1,3 +1,4 @@
+// console.time("dbf-editor")
 const { DBFFile } = require("dbffile");
 
 async function batchWrite(fieldDescriptors, records) {
@@ -5,6 +6,7 @@ async function batchWrite(fieldDescriptors, records) {
   console.log("DBF file created.");
   await dbf.appendRecords(records);
   console.log(`${records.length} records added.`);
+  // console.timeEnd("dbf-editor")
 }
 
 async function batchReadThenUpdate() {
