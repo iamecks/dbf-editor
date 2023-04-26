@@ -5,3 +5,4 @@ node_modules/
 *.sln
 .DS_Store
 *.dbf
+*xref.json
